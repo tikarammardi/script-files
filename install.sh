@@ -15,6 +15,7 @@ while :
 	 echo " 5. Update and Upgrade "
 
 	 echo " 6. Exit "
+	 echo "Enter your Choice:"
 
 	 read option
 
@@ -27,13 +28,16 @@ while :
 			 sudo dpkg -i google-chrome-stable_current_amd64.deb;;
 
 		2) echo  "************Installing IntelliJi IDE***************";
-			echo " Error occured!!";
+			echo " Error occured!!"
 			;;
 		3) echo " Installing VirtualBox";
-			sudo apt-get install virtualbox;;
+			sudo apt-get install virtualbox
+			echo "VirtualBox Installed Successfully"
+			;;
 
 		4) echo " Installing DoxBox";
-			sudo apt-get install doxbox;;
+			sudo apt-get install dosbox
+			echo "DosBox Installed Successfully";;
 
 		5) echo " ************************Update $ Upgrade*************";
 			sudo apt update
